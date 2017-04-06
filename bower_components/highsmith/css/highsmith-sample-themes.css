@@ -1,0 +1,97 @@
+.custom-style-cal {
+  -webkit-appearance: none;
+  border: 1px solid #333333;
+  border-radius: 1px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 1, 0.1), 0 0 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.36);
+  font-family: Nixie One, serif;
+  font-size: 12px; }
+  .custom-style-cal.highsmithCal {
+    display: block;
+    position: fixed;
+    top: 10%;
+    width: 250px;
+    background: white;
+    border: 1px solid;
+    left: 38%;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    z-index: 10000; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+      .custom-style-cal.highsmithCal {
+        left: 10%; } }
+    @media only screen and (min-width: 320px) and (max-width: 568px) {
+      .custom-style-cal.highsmithCal {
+        left: 10%; } }
+  .custom-style-cal .highsmithCal--month {
+    display: block;
+    font-size: 22px;
+    padding: 7px;
+    color: #e2e3e4;
+    background-color: #5e5a5a; }
+  .custom-style-cal .highsmithCal--month__label {
+    display: inline-block;
+    width: 60%; }
+  .custom-style-cal .highsmithCal--month__increment,
+  .custom-style-cal .highsmithCal--month__decrement,
+  .custom-style-cal .highsmithCal--year__increment,
+  .custom-style-cal .highsmithCal--year__decrement {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    -o-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2); }
+    .custom-style-cal .highsmithCal--month__increment:hover,
+    .custom-style-cal .highsmithCal--month__decrement:hover,
+    .custom-style-cal .highsmithCal--year__increment:hover,
+    .custom-style-cal .highsmithCal--year__decrement:hover {
+      opacity: 0.8; }
+  .custom-style-cal .highsmithCal--year {
+    display: block;
+    font-size: 16px;
+    background-color: #b3afaf;
+    color: #333333; }
+  .custom-style-cal .highsmithCal--year__label {
+    display: inline-block;
+    width: 40%; }
+  .custom-style-cal .highsmithCal--daysLegend {
+    display: block;
+    text-align: left;
+    background-color: #e4dada; }
+  .custom-style-cal .highsmithCal--dayHolder__nullLabel,
+  .custom-style-cal .highsmithCal--dayHolder__label,
+  .custom-style-cal .highsmithCal--daysLegend__label {
+    display: inline-block;
+    width: 5%;
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+    vertical-align: top; }
+  .custom-style-cal .highsmithCal--dayHolder__label {
+    cursor: pointer;
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    -o-transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2); }
+    .custom-style-cal .highsmithCal--dayHolder__label:hover {
+      background-color: #333333;
+      color: white; }
+  .custom-style-cal .highsmithCal--dayHolder__nullLabel {
+    background-color: rgba(51, 51, 51, 0.07);
+    width: 5px;
+    padding: 12px 9px;
+    margin: 8px 6px; }
+  .custom-style-cal .highsmithCal--dayHolder {
+    display: block;
+    background-color: #dbcbcb;
+    text-align: left; }
+
+.highsmithCal--offClicker {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; }

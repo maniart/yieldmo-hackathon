@@ -1,0 +1,17 @@
+{
+  "name": "ym-brand-bower",
+  "version": "0.0.1",
+  "main": ["css/ym-brand.min.css", "js/ym-brand.min.js"],
+  "ignore": [
+    "images",
+    "fonts",
+    "index.html",
+    "bower.json",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "highsmith": "*",
+    "dropzone": "~4.3.0"
+  }
+}

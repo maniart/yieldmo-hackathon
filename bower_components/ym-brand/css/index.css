@@ -1,0 +1,243 @@
+body {
+  padding-top: 64px;
+}
+.sticker-sheet-div {
+  display: block;
+  width: 80%;
+  margin: 24px auto;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 2px;
+  text-align: center;
+}
+
+.sticker-sheet-div h1 {
+  display: block;
+  font-size: 24px;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.color-holder {
+  display: inline-block;
+  margin: 12px;
+}
+
+.primary-color-block {
+  display: block;
+  width: 220px;
+  height: 150px;
+}
+
+.secondary-color-block {
+  display: block;
+  width: 300px;
+  height: 100px;
+}
+
+.color-label {
+  display: block;
+  padding: 8px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 12px;
+}
+
+.secondary-color-label {
+  display: block;
+  padding: 8px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 12px;
+  white-space: normal;
+  width: 290px;
+}
+
+.font-holder-heading {
+  display: block;
+  text-align: left;
+  padding: 4px;
+  font-size: 48px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.font-holder-line {
+  display: block;
+  text-align: left;
+  padding: 4px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 24px;
+  letter-spacing: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.font-holder-p {
+  display: block;
+  text-align: left;
+  padding: 4px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.img-holder {
+  display: inline-block;
+  background-color: #F1F1F1;
+  padding: 32px;
+  margin: 16px;
+}
+
+.img-holder img {
+  width: 100px;
+}
+
+.format-icon-wrapper {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 24px;
+}
+
+.format-icon-wrapper label {
+  display: block;
+  height: 125px;
+  width: 125px;
+  background-color: #F1F1F1;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.format-icon-wrapper em {
+  display: block;
+  width: 125px;
+  font-style: normal;
+  background: rgba(241, 241, 241, 0.42);
+  color: rgba(128, 128, 128, 0.38);
+  padding: 4px 0;
+}
+
+.ymb_site-left-menu {
+  display: block;
+  position: fixed;
+  background: #F3F3F3;
+  bottom: 0;
+  width: 200px;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease;
+  padding-top: 136px;
+}
+
+.ymb_site-left-menu-item {
+  padding: 12px 32px;
+  display: block;
+  border-bottom: 1px solid #E5E3E3;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ymb_site-left-menu-item.selected {
+  background-color: white;
+  color: #000;
+}
+
+.ymb_site-left-menu-item.unselected {
+  color: #9B9B9B;
+}
+
+.ymb_site-brand-header {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 73px;
+  padding: 16px 48px;
+  z-index: 10;
+  font-size: 24px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+}
+
+.ymb_site-elements-wrapper {
+  display: block;
+  position: absolute;
+  top: 132px;
+  right: 0;
+  left: 200px;
+  bottom: 0;
+  overflow: scroll;
+  padding: 0 32px;
+}
+
+.ymb_site-logo-element  {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  padding: 100px 200px;
+  background-position: center;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.ymb_site-logo-element-icon {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  padding: 100px 200px;
+  background-position: center;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+  body {
+    padding-top: 48px;
+  }
+
+  .ymb_site-brand-header {
+    top: 48px;
+  }
+
+  .ymb_site-left-menu {
+    padding-top: 110px;
+  }
+
+  .ymb_site-left-menu {
+    width: 100px;
+  }
+
+  .ymb_site-left-menu-item {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .ymb_site-elements-wrapper {
+    top: 110px;
+    left: 100px;
+  }
+
+  .ymb_site-logo-element  {
+    display: inline-block;
+    border-radius: 4px;
+    background-size: 100px;
+    padding: 50px 100px;
+    margin-right: 0px;
+  }
+
+  .ymb_site-logo-element-icon {
+    background-size: 50px;
+    padding: 50px 100px;
+  }
+
+}
+.

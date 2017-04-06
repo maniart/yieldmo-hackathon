@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+  <title>Calendar</title>
+
+  <link type="text/css" rel="stylesheet" href="css/highsmith-sample-themes.css">
+  <link type="text/css" rel="stylesheet" href="css/highsmith-demo-page.css">
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro|Nixie+One|Glegoo|Arbutus+Slab|Codystar|Viga|Neuton|Poiret+One|Kreon|Oswald|Abril+Fatface">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Highsmith calendar</h1>
+  <p>Highsmith is a simple calendar picker.  It has several customization options, and does not require jQuery or any additional CSS.  Simply attach Highsmith to an input/element.  When you select a date on the calendar, its value will be placed into your input/element.  View the code on <a href="https://github.com/adamvanlente/highsmith">Github</a></p>
+  <div class="example">
+    <p>An example of a basic, unstyled Highsmith calendar.</p>
+    <pre>
+// html
+&lt;input type="text" id="default-cal"/&gt;
+
+// Invoke Highsmith on your element.
+var defaultCal = new Highsmith('default-cal');
+    </pre>
+    <input type="text" id="default-cal"/>
+  </div>
+
+  <div class="example">
+    <p>Customize Highsmith with options.</p>
+    <pre>
+// html
+&lt;input type="text" id="custom-cal"/&gt;
+
+// Options
+var options = {
+  resetDateButton: true, // Let the user reset the date.
+  killButton: true, // Let the user kill the calendar.
+  style: {
+    globals: {
+      // Give the entire calendar a custom font.
+      fontFamily: 'Helvetica, sans-serif',
+    }
+  }
+};
+
+// Invoke Highsmith.
+var customCal = new Highsmith('custom-cal', options);
+    </pre>
+    <input type="text" id="custom-cal" value="10/11/14"/>
+  </div>
+</div>
+
+  <script type="text/javascript" src="js/highsmith-cal.js"></script>
+  <script text="type/javascript">
+
+    // Set up a default calendar.
+    var defaultCal = new Highsmith('default-cal');
+
+    // Some custom options.
+    var options = {
+      resetDateButton: true, // Let the user reset the date.
+      killButton: true, // Let the user kill the calendar.
+      customDate: true,
+      style: {
+        globals: {
+          // Give the entire calendar a custom font.
+          fontFamily: 'Helvetica, sans-serif',
+        }
+      }
+    };
+
+    // Set up a default calendar.
+    var customCal = new Highsmith('custom-cal', options);
+
+  </script>
+
+</body>
+</html>

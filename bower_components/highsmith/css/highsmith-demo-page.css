@@ -1,0 +1,69 @@
+body {
+  background-color: #f5f4ea;
+  font-size: 13px; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    body {
+      font-size: 16px; } }
+  @media only screen and (min-width: 320px) and (max-width: 568px) {
+    body {
+      font-size: 16px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    body h1 {
+      font-size: 26px;
+      text-decoration: underline;
+      font-weight: normal; } }
+  @media only screen and (min-width: 320px) and (max-width: 568px) {
+    body h1 {
+      font-size: 26px;
+      text-decoration: underline;
+      font-weight: normal; } }
+
+.wrapper {
+  font-family: Nixie One, serif;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .wrapper {
+      width: 300px; } }
+  @media only screen and (min-width: 320px) and (max-width: 568px) {
+    .wrapper {
+      width: 300px; } }
+  .wrapper p {
+    text-align: justify; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+      .wrapper p {
+        text-align: left; } }
+    @media only screen and (min-width: 320px) and (max-width: 568px) {
+      .wrapper p {
+        text-align: left; } }
+  .wrapper a {
+    color: #333333; }
+  .wrapper .example {
+    padding: 12px;
+    border: 1px solid #666666;
+    background-color: #c2c5bc;
+    margin-bottom: 12px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+      .wrapper .example {
+        padding: 2px; } }
+    @media only screen and (min-width: 320px) and (max-width: 568px) {
+      .wrapper .example {
+        padding: 2px; } }
+  .wrapper pre {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.07);
+    font-size: 10px;
+    color: #333333;
+    overflow: scroll; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+      .wrapper pre {
+        margin: 2px;
+        padding: 2px; } }
+    @media only screen and (min-width: 320px) and (max-width: 568px) {
+      .wrapper pre {
+        margin: 2px;
+        padding: 2px; } }

@@ -1,0 +1,127 @@
+// Globals
+
+// Media Query Breakpoints
+$iphone-portrait: 320px
+$iphone-landscape: 568px
+$ipad-portrait: 569px
+$ipad-landscape: 1024px
+$desktop: 1025px
+$desktop-large: 1824px
+
+// Breakpoint function
+=break-for($device)
+
+  @if $device == iphone
+    @media only screen and (min-device-width: $iphone-portrait) and (max-device-width: $iphone-landscape)
+      @content
+    @media only screen and (min-width: $iphone-portrait) and (max-width: $iphone-landscape)
+      @content
+
+// Transition
+=transition($transtype)
+  -webkit-transition: $transtype
+  -moz-transition:    $transtype
+  -o-transition:      $transtype
+  transition:         $transtype
+
+$easy: all 0.5s cubic-bezier(0.7, 0.53, 0, 0.2)
+
+.custom-style-cal
+  -webkit-appearance: none
+  border: 1px solid #333333
+  border-radius: 1px
+  box-shadow: inset 0 0 4px rgba(0, 0, 1, 0.1), 0 0 2px rgba(0, 0, 0, 0.1)
+  background-color: rgba(255, 255, 255, 0.36)
+  font-family: Nixie One, serif
+  font-size: 12px
+
+
+  &.highsmithCal
+    display: block
+    position: fixed
+    top: 10%
+    width: 250px
+    background: white
+    border: 1px solid
+    left: 38%
+    font-family: "Source Sans Pro", sans-serif
+    text-align: center
+    z-index: 10000
+
+    +break-for(iphone)
+      left: 10%
+
+  .highsmithCal--month
+    display: block
+    font-size: 22px
+    padding: 7px
+    color: #E2E3E4
+    background-color: #5E5A5A
+
+  .highsmithCal--month__label
+    display: inline-block
+    width: 60%
+
+  .highsmithCal--month__increment,
+  .highsmithCal--month__decrement,
+  .highsmithCal--year__increment,
+  .highsmithCal--year__decrement
+    display: inline-block
+    cursor: pointer
+    +transition($easy)
+
+    &:hover
+      opacity: 0.8
+
+  .highsmithCal--year
+    display: block
+    font-size: 16px
+    background-color: #B3AFAF
+    color: #333
+
+  .highsmithCal--year__label
+    display: inline-block
+    width: 40%
+
+  .highsmithCal--daysLegend
+    display: block
+    text-align: left
+    background-color: #E4DADA
+
+  .highsmithCal--dayHolder__nullLabel,
+  .highsmithCal--dayHolder__label,
+  .highsmithCal--daysLegend__label
+    display: inline-block
+    width: 5%
+    padding: 5px
+    margin: 6px
+    text-align: center
+    vertical-align: top
+
+  .highsmithCal--dayHolder__label
+    cursor: pointer
+    +transition($easy)
+
+    &:hover
+      background-color: #333
+      color: #FFF
+
+  .highsmithCal--dayHolder__nullLabel
+    background-color: rgba(51, 51, 51, 0.07)
+    width: 5px
+    padding: 12px 9px
+    margin: 8px 6px
+
+  .highsmithCal--dayHolder
+    display: block
+    background-color: rgb(219, 203, 203)
+    text-align: left
+
+.highsmithCal--offClicker
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9999

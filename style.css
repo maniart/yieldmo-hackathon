@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(138deg, #ffa88c, #009245, #f2808c, #ffdb00, #fd4d11, #0033cc);
+  background-size: 1200% 1200%;
+  -webkit-animation: gradient 44s ease infinite;
+  -moz-animation: gradient 44s ease infinite;
+  animation: gradient 44s ease infinite;
+  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Apercu Regular", Calibri, sans-serif;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@keyframes gradient {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+
+#main {
+  margin: 100px 10%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.happy-phone {
+  height: 200px;
+  width: 150px;
+  /* background: url('./assets/happy-phone.png') 0 0 no-repeat transparent; */
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  -ms-transition: opacity 400ms ease-in;
+  -o-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  opacity: 1;
+}
+
+.happy-phone img {
+  widht: 100%;
+  height: 100%;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+#animated-example {
+   background: #cd4436;
+   height: 200px;
+   margin: 20px auto;
+   width: 300px;
+   box-shadow: inset 0 0 7px rgba(0,0,0,0.7);
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out-back;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+
+
+.panel {
+  background: white;
+  border-bottom: 2px solid black;
+}

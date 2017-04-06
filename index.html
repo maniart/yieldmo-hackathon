@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yieldmo Haps</title>
+  <link
+    rel="shortcut icon"
+    href="//s3.amazonaws.com/static.yieldmo.com/icons/beta/favicon.ico" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="bower_components/flexboxgrid/dist/flexboxgrid.min.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="bower_components/ym-brand/css/ym-brand.min.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="style.css">
+  <script
+    type="text/javascript"
+    src="bower_components/ym-brand/js/ym-brand.min.js">
+
+  </script>
+  <script
+    src="bower_components/webcomponentsjs/webcomponents-lite.js">
+  </script>
+
+  <link rel="import" href="bower_components/digital-clock/digital-clock.html">
+
+
+  <script
+    type="text/javascript"
+    src="bower_components/jquery/dist/jquery.min.js">
+  </script>
+  <style is="custom-style" include="demo-pages-shared-styles">
+    #clock1 {
+      font-size:35px;
+      width: 250px;
+      background: gainsboro;
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- REUSABLE ELEMENT: HEADER -->
+  <div id="ymb_header-bar" class="ymb_header-bar ymb_header-bar-initial ymb_background-color-white">
+    <a href="http://yieldmo.com">
+      <label id="ymb_header-logo" class="ymb_header-logo ymb_header-logo-site"></label>
+    </a>
+    <a href="/#/">
+      <label id="ymb_header-application-name" class="ymb_header-application-name ymb_color-black ymb_font-standard">Haps!</label>
+    </a>
+    <span class="ymb_header-topnav ymb_color-black ymb_font-standard">
+      <a href="//admin.yieldmo.com" class="ymb_header-topnav-link ymb_font-standard ymb_color-black" type="button" name="login">Login</a>
+      <nav id="ymb_header-menu-bars" class="ymb_header-menu-bars ymb_header-menu-bars-initial">
+        <label class="ymb_header-menu-bars-top ymb_background-color-black"></label>
+        <label class="ymb_header-menu-bars-middle ymb_background-color-black"></label>
+        <label class="ymb_header-menu-bars-bottom ymb_background-color-black"></label>
+      </nav>
+    </span>
+  </div>
+  <!-- END REUSABLE ELEMENT -->
+
+  <!-- REUSABLE ELEMENT: SIDENAV -->
+    <div id="ymb_sidenav" class="ymb_sidenav ymb_sidenav-initial">
+
+      <span id="ymb_sidenav-links-section-yieldmo" class="ymb_sidenav-links-section">
+        <h1 class="ymb_sidenav-links-section-header ymb_color-white ymb_font-bold ymb_hide-mobile">Yieldmo</h1>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com/">Home</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com/about">About</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//adbuilder.yieldmo.com/">Formats</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com/team">Team</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com/careers">Careers</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com/blog">Blog</a>
+        </label>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//yieldmo.com#contact">Contact</a>
+        </label>
+
+      </span>
+
+      <span class="ymb_sidenav-link-separator"></span>
+
+      <span id="ymb_sidenav-links-section-applications" class="ymb_hide-mobile ymb_sidenav-links-section">
+        <h1 class="ymb_sidenav-links-section-header ymb_color-white ymb_font-bold">Applications</h1>
+
+        <label class="ymb_sidenav-link-wrapper">
+          <a class="ymb_sidenav-link ymb_color-white ymb_font-standard" href="//adbuilder.yieldmo.com">Ad Builder</a>
+        </label>
+      </span>
+
+      <span class="ymb_sidenav-link-separator ymb_hide-mobile"></span>
+
+      <div id="ymb_sidenav-footer" class="ymb_sidenav-footer">
+
+        <nav class="ymb_sidenav-footer-links">
+          <a class="ymb_sidenav-footer-link ymb_color-yellow ymb_font-standard" href="//yieldmo.com/faq">FAQ</a>
+          <a class="ymb_sidenav-footer-link ymb_color-yellow ymb_font-standard" href="//yieldmo.com/privacy">Privacy</a>
+        </nav>
+
+        <nav class="ymb_sidenav-social-links">
+          <span class="ymb_sidenav-social-links-header ymb_color-white ymb_font-standard">Follow us</span>
+          <a href="https://www.facebook.com/Yieldmo" target="blank" class="ymb_sidenav-social-links-item ymb_social-icon-facebook"></a>
+          <a href="https://twitter.com/yieldmo" target="blank" class="ymb_sidenav-social-links-item ymb_social-icon-twitter"></a>
+          <a href="https://instagram.com/yieldmo" target="blank" class="ymb_sidenav-social-links-item ymb_social-icon-instagram"></a>
+          <a href="https://www.linkedin.com/company/yieldmo" target="blank" class="ymb_sidenav-social-links-item ymb_social-icon-linkedin"></a>
+          <!-- <a href="#" target="blank" class="ymb_sidenav-social-links-item ymb_social-icon-vimeo"></a> -->
+        </nav>
+
+        <nav class="ymb-sidenav-footer-nyc">
+          <span class="ymb_icon-madeinnyc ymb_sidenav-madeinnyc"></span>
+          <span class="ymb_sidenav-footer-address ymb_font-standard ymb_color-white">218 W. 18th St, Floor 2</span>
+          <span class="ymb_sidenav-footer-address ymb_font-standard ymb_color-white">New York, NY 10011</span>
+        </nav>
+
+
+      </div>
+
+    </div>
+    <!-- END REUSABLE ELEMENT -->
+
+    <div id="main">
+<!--       <template>
+        <digital-clock id='clock1' locale="en-US"></digital-clock>
+      </template> -->
+<!--
+
+      <div class="happy-phone animated fadeInUp">
+        <img src="./assets/happy-phone.png">
+      </div> -->
+
+      <div class="row">
+        <div class="col-xs-6">
+          welcome
+        </div>
+        <div class="col-xs-6">
+          wetaher and stuff
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="section-title">
+            revenue
+          </h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  <script
+    type="text/javascript"
+    src="main.js">
+  </script>
+</body>
+</html>

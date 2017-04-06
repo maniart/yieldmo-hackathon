@@ -1,0 +1,29 @@
+{
+  "name": "ym-brand-bower",
+  "version": "1.5.3",
+  "main": [
+    "css/ym-brand.min.css",
+    "js/ym-brand.min.js"
+  ],
+  "ignore": [
+    "images",
+    "fonts",
+    "index.html",
+    "bower.json",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "highsmith": "*",
+    "dropzone": "~4.3.0"
+  },
+  "_release": "1.5.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.5.3",
+    "commit": "e79deb68647e555b21ede812347f74299c432a52"
+  },
+  "_source": "git@gitlab.yieldmo.com:yieldmo/ym-brand-bower.git",
+  "_target": "v1.5.3",
+  "_originalSource": "git@gitlab.yieldmo.com:yieldmo/ym-brand-bower.git"
+}

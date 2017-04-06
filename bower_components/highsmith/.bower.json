@@ -1,0 +1,31 @@
+{
+  "name": "highsmith",
+  "homepage": "https://github.com/adamvanlente/highsmith",
+  "description": "Highsmith is a calendar picker library.  It will turn an ordinary text input a calendar picker, which can be easily customized.",
+  "main": "js/highsmith-cal.js",
+  "moduleType": [],
+  "keywords": [
+    "Calendar",
+    "picker"
+  ],
+  "authors": [
+    "Adam VanLente"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "575b2a2493",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "575b2a2493bae97b027160befba2dc60e8a49922"
+  },
+  "_source": "https://github.com/adamvanlente/highsmith.git",
+  "_target": "*",
+  "_originalSource": "highsmith"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "hackathon",
+  "authors": [
+    "maniart <mani.art@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.2.1",
+    "flexboxgrid": "~6.3.2",
+    "ym-brand": "git@gitlab.yieldmo.com:yieldmo/ym-brand-bower.git#v1.5.3",
+    "digital-clock": "~1.0.2"
+  }
+}
